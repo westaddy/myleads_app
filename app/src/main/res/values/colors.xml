@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b67e0</color>
+    <color name="colorPrimaryDark">#1b67e0</color>
+    <color name="colorAccent">#888888</color>
+
+    <!-- Screens background color-->
+    <color name="screen_background">#ffffff</color>
+    <color name="bg_screen_up">#1b67e0</color>
+    <color name="bg_screen_down">#1b67e0</color>
+    <color name="bg_screen_lighter_grey">#f5f8f8</color>
+    <color name="bg_light_grey">#dedfe2</color>
+    <color name="bg_lighter_grey">#f5f8f8</color>
+    <color name="bg_grey">#c0c2c6</color>
+    <color name="bg_black_5b">#5b5b5b</color>
+
+
+    <!-- font color-->
+    <color name="fc_white">#ffffff</color>
+    <color name="fc_nearlywhite">#ababab</color>
+    <color name="fc_grey_dd">#dddddd</color>
+    <color name="fc_black_99">#999999</color>
+    <color name="fc_black_22">#222222</color>
+    <color name="fc_black_89">#899aa2</color>
+    <color name="fc_green">#158e33</color>
+    <color name="fc_blue">#0000ff</color>
+    <color name="fc_blue_7">#78b3f0</color>
+    <color name="fc_blue_close_confirm">#28629a</color>
+    <color name="fc_deepgreen">#00ff00</color>
+    <color name="fc_red">#ff0000</color>
+    <color name="fc_yellow_status">#e49610</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark">#ababab</color>
+
+    <!-- Border colors -->
+    <color name="light_border">#dddddd</color>
+    <color name="slightly_dark_border">#777777</color>
+    <color name="bottom_border_color">#222222</color>
+
+
+    <!-- dots active colors -->
+    <color name="dot_light">#e6b221</color>
+
+    <color name="black_overlay">#1b67e000</color>
+
+
+</resources>

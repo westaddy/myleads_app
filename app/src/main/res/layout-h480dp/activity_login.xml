@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.myleads.android.activities.LoginActivity">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/signin"
+            android:textSize="@dimen/slide_desc"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/emailWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_txt_height"
+        android:layout_marginEnd="@dimen/general_left_right_margin_40"
+        android:layout_marginLeft="@dimen/general_left_right_margin_40"
+        android:layout_marginRight="@dimen/general_left_right_margin_40"
+        android:layout_marginStart="@dimen/general_left_right_margin_40"
+        android:layout_marginTop="20dp"
+        app:errorEnabled="true"
+        app:hintEnabled="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <EditText
+            android:id="@+id/emailTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/normal_font_size" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_txt_height"
+        android:layout_marginEnd="@dimen/general_left_right_margin_40"
+        android:layout_marginLeft="@dimen/general_left_right_margin_40"
+        android:layout_marginRight="@dimen/general_left_right_margin_40"
+        android:layout_marginStart="@dimen/general_left_right_margin_40"
+        android:layout_marginTop="0dp"
+        app:errorEnabled="true"
+        app:hintEnabled="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailWrapper">
+
+        <EditText
+            android:id="@+id/passwordTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/normal_font_size" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/signinBTN"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/general_left_right_margin"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_corner_signin_page"
+        android:text="@string/signin"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline" />
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</android.support.constraint.ConstraintLayout>
+

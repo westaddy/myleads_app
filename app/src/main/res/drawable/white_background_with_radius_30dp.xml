@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle" >
+            <!-- View background color -->
+            <solid
+                android:color="@color/screen_background" >
+            </solid>
+
+            <!-- The radius makes the corners rounded -->
+            <corners
+                android:radius="30dip">
+            </corners>
+        </shape>
+    </item>
+
+</selector>

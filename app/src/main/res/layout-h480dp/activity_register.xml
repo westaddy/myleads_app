@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myleads.android.activities.RegisterActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fullnameWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_txt_height"
+        android:layout_marginEnd="@dimen/reg_form_margin"
+        android:layout_marginLeft="@dimen/reg_form_margin"
+        android:layout_marginRight="@dimen/reg_form_margin"
+        android:layout_marginStart="@dimen/reg_form_margin"
+        android:layout_marginTop="20dp"
+        app:hintEnabled="false"
+        app:errorEnabled="true"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/fullnameTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:drawableLeft="@mipmap/profile"
+            android:drawablePadding="@dimen/reg_icon_padding"
+            android:paddingBottom="10dp"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/reg_icon_padding"
+            android:paddingRight="@dimen/reg_icon_padding"
+            android:textSize="@dimen/reg_font_size" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reg_txt_height"
+            android:layout_marginLeft="@dimen/reg_form_margin"
+            android:layout_marginRight="@dimen/reg_form_margin"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullnameWrapper"
+             android:layout_marginStart="@dimen/reg_form_margin"
+            android:layout_marginEnd="@dimen/reg_form_margin"
+            app:hintEnabled="false"
+        app:errorEnabled="true">
+        <EditText
+            android:id="@+id/emailTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_mail"
+            android:drawableStart="@mipmap/ic_mail"
+            android:drawablePadding="@dimen/reg_icon_padding"
+            android:paddingBottom="10dp"
+            android:background="@drawable/border_bottom"
+            android:paddingLeft="@dimen/reg_icon_padding"
+            android:paddingRight="@dimen/reg_icon_padding"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/reg_font_size" />
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mobileWrapper"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/reg_txt_height"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="@dimen/reg_form_margin"
+        android:layout_marginRight="@dimen/reg_form_margin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordWrapper"
+        android:layout_marginStart="@dimen/reg_form_margin"
+        android:layout_marginEnd="@dimen/reg_form_margin"
+        app:hintEnabled="false"
+        app:errorEnabled="true">
+        <EditText
+            android:id="@+id/mobileTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_mobile"
+            android:drawableStart="@mipmap/ic_mobile"
+            android:drawablePadding="@dimen/reg_icon_padding"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/reg_icon_padding"
+            android:paddingRight="@dimen/reg_icon_padding"
+            android:background="@drawable/border_bottom"
+            android:hint="@string/mobile"
+            android:inputType="text|phone"
+            android:textSize="@dimen/reg_font_size" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordWrapper"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/reg_txt_height"
+        android:layout_marginEnd="@dimen/reg_form_margin"
+        android:layout_marginLeft="@dimen/reg_form_margin"
+        android:layout_marginRight="@dimen/reg_form_margin"
+        android:layout_marginStart="@dimen/reg_form_margin"
+        android:layout_marginTop="0dp"
+        app:hintEnabled="false"
+        app:errorEnabled="true"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailWrapper">
+
+        <EditText
+            android:id="@+id/passwordTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:drawableLeft="@mipmap/ic_lock"
+            android:drawablePadding="@dimen/reg_icon_padding"
+            android:paddingBottom="10dp"
+            android:drawableStart="@mipmap/ic_lock"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/reg_icon_padding"
+            android:paddingRight="@dimen/reg_icon_padding"
+            android:textSize="@dimen/reg_font_size" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/companyWrapper"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/reg_txt_height"
+        android:layout_marginEnd="@dimen/reg_form_margin"
+        android:layout_marginLeft="@dimen/reg_form_margin"
+        android:layout_marginRight="@dimen/reg_form_margin"
+        android:layout_marginStart="@dimen/reg_form_margin"
+        android:layout_marginTop="0dp"
+        app:hintEnabled="false"
+        app:errorEnabled="true"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileWrapper">
+
+        <EditText
+            android:id="@+id/companyTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:drawableLeft="@mipmap/ic_lock"
+            android:drawablePadding="@dimen/reg_icon_padding"
+            android:paddingBottom="10dp"
+            android:drawableStart="@mipmap/ic_lock"
+            android:hint="@string/company_hint"
+            android:inputType="textLongMessage"
+            android:paddingLeft="@dimen/reg_icon_padding"
+            android:paddingRight="@dimen/reg_icon_padding"
+            android:textSize="@dimen/reg_font_size" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/nextBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/reg_form_margin"
+        android:layout_marginLeft="@dimen/reg_form_margin"
+        android:layout_marginRight="@dimen/reg_form_margin"
+        android:layout_marginStart="@dimen/reg_form_margin"
+        android:layout_marginTop="@dimen/reg_form_marginTop"
+        android:background="@drawable/round_corner_signup_page"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#888888"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyWrapper"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+
+
+</android.support.constraint.ConstraintLayout>

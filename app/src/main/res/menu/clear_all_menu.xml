@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.NotificationFragment">
+
+    <item
+        android:id="@+id/menu"
+        android:orderInCategory="100"
+        android:title="Menu"
+        android:icon="@drawable/menu_android"
+        app:showAsAction="ifRoom">
+        <menu >
+            <item android:id="@+id/clear" android:title="Clear all" />
+        </menu>
+
+    </item>
+
+
+</menu>

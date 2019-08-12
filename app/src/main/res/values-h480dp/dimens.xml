@@ -1,0 +1,50 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- sizes. -->
+    <dimen name="profile_img">80dp</dimen>
+    <dimen name="reg_txt_height">62dp</dimen>
+    <dimen name="welcome_img_width_height">180dp</dimen>
+    <dimen name="main_img_width_height">150dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="profile_menu_item_icon_size">17dp</dimen>
+    <dimen name="profile_menu_item_button_height">45dp</dimen>
+
+
+    <!-- padding -->
+    <dimen name="reg_radio_paddingleft">15dp</dimen>
+    <dimen name="reg_txt_padding">20dp</dimen>
+    <dimen name="reg_icon_padding">30dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="profile_menu_item_button_paddingBottom">20dp</dimen>
+    <dimen name="profile_menu_item_button_paddingTop">10dp</dimen>
+    <dimen name="select_padding">40dp</dimen>
+    <dimen name="select_padding_sides">20dp</dimen>
+
+    <!-- marging -->
+    <dimen name="general_left_right_margin">20dp</dimen>
+    <dimen name="general_left_right_margin_40">40dp</dimen>
+    <dimen name="slide_title_margin_top">40dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="reg_form_margin">32dp</dimen>
+    <dimen name="reg_form_marginTop">10dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="select_margin">40dp</dimen>
+    <dimen name="profile_menu_item_image_marginTop">5dp</dimen>
+    <dimen name="post_listView_marginTop">120dp</dimen>
+
+
+    <!-- font sizes -->
+    <dimen name="normal_font_size">14sp</dimen>
+    <dimen name="reg_icon_size">5dp</dimen>
+    <dimen name="slide_desc">14sp</dimen>
+    <dimen name="reg_font_size">15sp</dimen>
+    <dimen name="slide_title">18sp</dimen>
+    <dimen name="profile_menu_item_font_size">13sp</dimen>
+    <dimen name="profile_menu_item_top_title_font_sixe">16sp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>

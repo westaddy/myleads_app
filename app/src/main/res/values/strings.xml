@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">myLeads</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="api_url">https://addyleads.herokuapp.com/</string>
+
+    <!--Buttons-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">START</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="submit">Submit</string>
+
+
+
+    <!--View-->
+    <string name="email_hint">Your email </string>
+    <string name="password_hint">Password</string>
+    <string name="full_name">Full name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="country_prompt">Choose a country</string>
+
+
+
+    <!--Others-->
+    <string name="slide_1_title">Create Leads </string>
+    <string name="slide_1_desc">Easy to add leads.</string>
+
+    <string name="slide_2_title">Generate Report</string>
+    <string name="slide_2_desc">Generate report on your leads</string>
+
+    <string name="slide_3_title">MyLeads</string>
+    <string name="slide_3_desc">Manage your leads with MyLeads.</string>
+    <string name="post_frag_desc">Post an errand and start receiving offer from runners within minutes</string>
+    <string name="post_frag_desc_2">For safety and review purposes, keep all transactions on Errandworld</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc"></string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="my_leads">MyLeads</string>
+    <string name="signin_img_cd">Sign in image icon desc</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="or">Or</string>
+    <string name="fb_signin_icon">Facebook sign in icon</string>
+    <string name="slider_img_desc">Sliders images</string>
+    <string name="create_acc">Create Account</string>
+    <string name="agree">By signing up you agree to terms of service and privacy policy</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_back">back</string>
+    <string name="select_a_province">SELECT PROVINCE</string>
+    <string name="select_a_city">SELECT CITY</string>
+    <string name="select_a_suburb">SELECT SUBURB</string>
+
+    <string name="comfirmation">Confirmation</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_phone">Enter phone</string>
+    <string name="my_profile">MY PROFILE</string>
+    <string name="name">Name</string>
+    <string name="birth_date">DATE OF BIRTH</string>
+
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+
+
+    <string name="title_activity_payment_confirmation">PaymentConfirmationActivity</string>
+    <string name="awesome">Awesome!</string>
+    <string name="your_payment_has">Your payment has been approved</string>
+    <string name="has_loaded">has been loaded to your wallet balance. You may now go ahead to award errands.</string>
+    <string name="okay_thanks">Okay! Thanks</string>
+
+    <string name="title_activity_payment_denied">PaymentDeniedActivity</string>
+    <string name="oh_noes">Oh noes!</string>
+    <string name="your_transaction_was">Transaction Disapproved</string>
+    <string name="payment_has_been_declined">Payment has been declined or canceled, Please contact your bank or try again with a different card.</string>
+    <string name="back">Back</string>
+    <string name="after_completing">After completing an errand, Your payment will be deposited in your EW Wallet. Fund may be withdrawn anytime. You may withdraw immediately or wait for more earnings. We will release payment into the Bank account you provided under ‘Payment method’.</string>
+    <string name="enter_withdrawal_amount">Enter withdrawal amount</string>
+    <string name="submit_request">SUBMIT REQUEST</string>
+    <string name="edit_card_details">EDIT CARD DETAILS</string>
+    <string name="account_settings">ACCOUNT SETTINGS</string>
+    <string name="profile">PROFILE</string>
+    <string name="edit_my_profile">Edit my profile</string>
+    <string name="password">PASSWORD</string>
+    <string name="change_password">Change password</string>
+
+    <string name="current_password">CURRENT PASSWORD</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="update">UPDATE</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+
+    <string name="city">City</string>
+    <string name="province">PROVINCE</string>
+    <string name="suburb">SUBURB</string>
+
+    <!-- Errors -->
+    <string name="internet_error">Internet error!</string>
+    <string name="parsing_error">Parsing error! Contact admin</string>
+    <string name="connection_timeout">Connection timeout!</string>
+    <string name="server_error">Server error!</string>
+    <string name="register">Register</string>
+    <string name="company_hint">Company</string>
+
+</resources>

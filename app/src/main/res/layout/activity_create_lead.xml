@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shimmer_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myleads.android.activities.CreateLeadActivity">
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/fc_nearlywhite"
+        android:gravity="left"
+        android:paddingBottom="@dimen/select_padding"
+        android:paddingEnd="@dimen/select_padding_sides"
+        android:paddingLeft="@dimen/select_padding_sides"
+        android:paddingRight="@dimen/select_padding_sides"
+        android:paddingStart="@dimen/select_padding_sides"
+        android:paddingTop="@dimen/select_padding"
+        android:text="Create a lead"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/titleWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/general_left_right_margin"
+                android:layout_marginLeft="@dimen/general_left_right_margin"
+                android:layout_marginRight="@dimen/general_left_right_margin"
+                android:layout_marginStart="@dimen/general_left_right_margin"
+                android:layout_marginTop="20dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Title"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/general_left_right_margin"
+                android:layout_marginLeft="@dimen/general_left_right_margin"
+                android:layout_marginRight="@dimen/general_left_right_margin"
+                android:layout_marginStart="@dimen/general_left_right_margin"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleWrapper">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bottom"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/middleWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameWrapper">
+
+                <EditText
+                    android:id="@+id/middleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter Middle Name"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lastWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/middleWrapper">
+
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter Last Name"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lastWrapper">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter Email"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phoneWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailWrapper">
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter Phone number"
+                    android:inputType="phone"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/companyWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneWrapper">
+
+                <EditText
+                    android:id="@+id/company"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter Company"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sourceWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/companyWrapper">
+
+                <EditText
+                    android:id="@+id/source"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter Source"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/positionWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sourceWrapper">
+
+                <EditText
+                    android:id="@+id/position"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter Position"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/addressWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/positionWrapper">
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter Address"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/suburbWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addressWrapper">
+
+                <EditText
+                    android:id="@+id/suburb"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter Suburb"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/cityWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/suburbWrapper">
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter City"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/provinceWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:errorEnabled="true"
+                app:hintEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cityWrapper">
+
+                <EditText
+                    android:id="@+id/province"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_txt_height"
+                    android:background="@drawable/border_bottom"
+                    android:hint="Enter province"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="#b6f2a4"
+                    android:textSize="@dimen/normal_font_size" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <Button
+                android:id="@+id/postLead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="@dimen/general_left_right_margin"
+                android:layout_marginLeft="@dimen/general_left_right_margin"
+                android:layout_marginRight="@dimen/general_left_right_margin"
+                android:layout_marginStart="@dimen/general_left_right_margin"
+                android:layout_marginTop="60dp"
+                android:text="@string/submit"
+                android:textColor="@color/fc_nearlywhite"
+                android:background="@drawable/round_corner_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/provinceWrapper" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
